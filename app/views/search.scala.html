@@ -1,0 +1,22 @@
+@(searchForm: Form[Search])
+
+@import helper._
+
+@main("UniLinks") {
+    
+  <div class="wrapper">
+  <div id="topbar">
+    <div class="fl_left">
+        <form action="/search" method="POST">
+        <fieldset>
+          <input type="text" id="universityName" name="universityName" value="Enter University Name"  onfocus="this.value=(this.value=='Enter University Name')? '' : this.value ;" />
+          <input type="submit" name="go" id="go" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+        
+    
+}

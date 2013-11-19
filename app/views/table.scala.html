@@ -1,0 +1,81 @@
+@(university: String, alumni: List[Alumnus], map: Map[String, Integer])
+
+@import helper._
+
+@scripts = {
+    <script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'University Alumni Working in Major Organizations'
+        },
+        tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Job Share',
+            data: [ 
+ 					@for((key, value) <- map) {
+                	['@key', @value],}
+				['Others',10]
+            ]
+        }]
+    });
+});
+</script>    
+}
+
+@main("List of Alumni", scripts) {
+
+
+<h1>@university Alumni</h1>
+
+<div id="container" style="min-width: 310px; max-width: 400px; height: 400px; margin: 0 auto">
+</div>
+
+
+	
+    <TABLE BORDER="1"    WIDTH="50%"   CELLPADDING="2" CELLSPACING="1">
+   		<TR>
+      		<TH>First Name</TH>
+      		<TH>Last Name</TH>
+      		<TH>Position</TH>
+      		<TH>Organization</TH>
+   		</TR>
+   		
+    	@for(alumnus <- alumni) {
+            
+            	<TR>
+      				<TH>@alumnus.firstName</TH>
+      				<TH>@alumnus.lastName</TH>
+      				<TH>@alumnus.position</TH>
+      				<TH>@alumnus.organization</TH>
+   				</TR>                
+            
+        }
+        
+    </TABLE>  
+    
+    </br></br></br></br>
+    @form(routes.Application.home()) {
+   		<input type="submit" value="Back to Search">
+    }
+}

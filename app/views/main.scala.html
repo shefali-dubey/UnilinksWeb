@@ -1,0 +1,26 @@
+@(title: String, scripts: Html = Html(""))(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/layout.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/highcharts.js")" type="text/javascript"></script>
+		<script src="@routes.Assets.at("javascripts/modules/exporting.js")" type="text/javascript"></script>
+		@scripts
+    </head>
+    
+    <body id="top">
+		<div class="wrapper">
+  		<div id="header">
+    		<h1><a href="/">UniLink</a></h1>
+    		<p>Place to search for your Alumini</p>
+  		</div>
+		</div>
+        @content	
+    </body>
+</html>
