@@ -35,7 +35,7 @@ $(function () {
             data: [ 
  					@for((key, value) <- map) {
                 	['@key', @value],}
-				['Others',10]
+				['Others',0]
             ]
         }]
     });
@@ -45,15 +45,18 @@ $(function () {
 
 @main("List of Alumni", scripts) {
 
-
 <h1>@university Alumni</h1>
-
-<div id="container" style="min-width: 310px; max-width: 400px; height: 400px; margin: 0 auto">
-</div>
-
-
-	
-    <TABLE BORDER="1"    WIDTH="50%"   CELLPADDING="2" CELLSPACING="1">
+<ul class="tabs">
+	<li><a href="#">Job Statistics</a></li>
+	<li><a href="#">Average Salary</a></li>
+	<li><a href="#">Alumni</a></li>
+</ul>
+ 
+<div class="panes">
+	<div>First</div>
+	<div>Second tab content</div>
+	<div>
+ <TABLE BORDER="1"    WIDTH="50%"   CELLPADDING="2" CELLSPACING="1">
    		<TR>
       		<TH>First Name</TH>
       		<TH>Last Name</TH>
@@ -72,8 +75,20 @@ $(function () {
             
         }
         
-    </TABLE>  
-    
+    </TABLE> 
+
+</div>
+</div>
+<script>
+// perform JavaScript after the document is scriptable.
+$(function() {
+    // setup ul.tabs to work as tabs for each div directly under div.panes
+    $("ul.tabs").tabs("div.panes > div");
+});
+</script>
+<div id="container" style="min-width: 310px; max-width: 400px; height: 400px; margin: 0 auto">
+</div>
+   
     </br></br></br></br>
     @form(routes.Application.home()) {
    		<input type="submit" value="Back to Search">
