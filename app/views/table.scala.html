@@ -39,24 +39,26 @@ $(function () {
             ]
         }]
     });
+    $("#tabs").tabs();
 });
+
 </script>    
 }
 
 @main("List of Alumni", scripts) {
 
 <h1>@university Alumni</h1>
-<ul class="tabs">
-	<li><a href="#">Job Statistics</a></li>
-	<li><a href="#">Average Salary</a></li>
-	<li><a href="#">Alumni</a></li>
-</ul>
- 
-<div class="panes">
-	<div>First</div>
-	<div>Second tab content</div>
-	<div>
- <TABLE BORDER="1"    WIDTH="50%"   CELLPADDING="2" CELLSPACING="1">
+   <div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Job Statistics</a></li>
+		<li><a href="#tabs-2">Average Salary</a></li>
+		<li><a href="#tabs-3">Alumni</a></li>
+	</ul>
+	<div id="tabs-1"><div id="container" style="min-width: 310px; max-width: 600px; height: 600px; margin: 0 auto">
+</div></div>
+	<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+	<div id="tabs-3">
+	  <TABLE BORDER="1"    WIDTH="50%"   CELLPADDING="2" CELLSPACING="1">
    		<TR>
       		<TH>First Name</TH>
       		<TH>Last Name</TH>
@@ -76,21 +78,10 @@ $(function () {
         }
         
     </TABLE> 
-
+	</div>
 </div>
-</div>
-<script>
-// perform JavaScript after the document is scriptable.
-$(function() {
-    // setup ul.tabs to work as tabs for each div directly under div.panes
-    $("ul.tabs").tabs("div.panes > div");
-});
-</script>
-<div id="container" style="min-width: 310px; max-width: 400px; height: 400px; margin: 0 auto">
-</div>
-   
-    </br></br></br></br>
     @form(routes.Application.home()) {
    		<input type="submit" value="Back to Search">
     }
+    
 }
