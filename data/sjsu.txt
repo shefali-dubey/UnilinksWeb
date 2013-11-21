@@ -5,7 +5,7 @@ db.company.insert({"SchoolName" : "San Jose state university","CompanyName" : "S
 db.company.insert({"SchoolName" : "San Jose state university","CompanyName" : "Others", "Percentage" : "80"})
 
 
-db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Chemical and Materials Engineering","AverageSal" : "63571"}) 
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Chemical and Materials Engineering","AverageSal" : "63571"})
 db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Civil Engineering","AverageSal" : "63500"})
 db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Computer Engineering","AverageSal" : "88196"})
 db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Electrical Engineering","AverageSal" : "88141"})

@@ -132,13 +132,12 @@ $('#container2').highcharts({
 </div></div>
 	<div id="tabs-2"><div id="container2" style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto">
 </div></div>
-	<div id="tabs-3">
+	<div id="tabs-3" overflow: auto>
 	  <TABLE BORDER="1"    WIDTH="50%"   CELLPADDING="2" CELLSPACING="1">
    		<TR>
       		<TH>First Name</TH>
       		<TH>Last Name</TH>
-      		<TH>Position</TH>
-      		<TH>Organization</TH>
+      		<TH>Designation</TH>
    		</TR>
    		
     	@for(alumnus <- alumni) {
@@ -146,8 +145,7 @@ $('#container2').highcharts({
             	<TR>
       				<TH>@alumnus.firstName</TH>
       				<TH>@alumnus.lastName</TH>
-      				<TH>@alumnus.position</TH>
-      				<TH>@alumnus.organization</TH>
+      				<TH>@alumnus.headline</TH>
    				</TR>                
             
         }

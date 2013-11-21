@@ -122,16 +122,15 @@ public class Alumnus {
 						a.lastName = obj.toString();
 					}
 
-					a.headline = "";
 
-					String headline = null;
+					a.headline = "";
 					obj = dbObject.get("headline");
 					if (obj != null) {
-						headline = obj.toString();
+						a.headline = obj.toString();
 					}
 
-					if (!"".equals(headline)) {
-						int last = 0;
+					/*if (!"".equals(headline)) {
+						int last = 
 
 						int first = headline.indexOf(" at");
 						if (first <= 0) {
@@ -160,7 +159,7 @@ public class Alumnus {
 							}
 						}
 
-					}
+					}*/
 
 					a.schoolName = schoolName;
 					alumniList.add(a);
