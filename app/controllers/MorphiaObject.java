@@ -11,7 +11,6 @@ import play.Logger;
 import com.google.code.morphia.Datastore;
 import com.google.code.morphia.Morphia;
 import com.mongodb.BasicDBObject;
-import com.mongodb.DBCollection;
 import com.mongodb.Mongo;
 
 public class MorphiaObject {
@@ -20,6 +19,7 @@ public class MorphiaObject {
 	static public Mongo mongo;
 	static public Morphia morphia;
 	static public Datastore datastore;
+	static public boolean cleanup = false;
 	
 	static {
 		
@@ -36,13 +36,13 @@ public class MorphiaObject {
 		
 		// Ensure Index
 		MorphiaObject.datastore.ensureIndexes();
-		MorphiaObject.datastore.getCollection(Alumnus.class).ensureIndex("SchoolName");
-		MorphiaObject.datastore.getCollection(Organization.class).ensureIndex("SchoolName");
-		MorphiaObject.datastore.getCollection(Salary.class).ensureIndex("SchoolName");
+//		MorphiaObject.datastore.getCollection(Alumnus.class).ensureIndex("SchoolName");
+//		MorphiaObject.datastore.getCollection(Organization.class).ensureIndex("SchoolName");
+//		MorphiaObject.datastore.getCollection(Salary.class).ensureIndex("SchoolName");
 		
 		MorphiaObject.datastore.ensureCaps();
 
-//		 cleanupDb();
+	
 
 		Logger.debug("** Morphia datastore: " + MorphiaObject.datastore.getDB());
 	}
@@ -51,7 +51,7 @@ public class MorphiaObject {
 	/**
 	 * Cleanup method.
 	 */
-	private static void cleanupDb() {
+	public static void cleanupDb() {
 		List<Alumnus> alumni = MorphiaObject.datastore.find(Alumnus.class).asList();
 		for (Alumnus a : alumni) {
 			BasicDBObject delete = new BasicDBObject();

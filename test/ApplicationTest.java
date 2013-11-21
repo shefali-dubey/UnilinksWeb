@@ -1,30 +1,3 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.mongodb.BasicDBObject;
-
-import controllers.MorphiaObject;
-
-import models.Alumnus;
-import models.Organization;
-import models.Salary;
-
-import org.junit.*;
-
-import play.mvc.*;
-import play.test.*;
-import play.data.DynamicForm;
-import play.data.validation.ValidationError;
-import play.data.validation.Constraints.RequiredValidator;
-import play.i18n.Lang;
-import play.libs.F;
-import play.libs.F.*;
-
-import static play.test.Helpers.*;
-import static org.fest.assertions.Assertions.*;
 
 
 /**
@@ -35,7 +8,7 @@ import static org.fest.assertions.Assertions.*;
 */
 public class ApplicationTest {	
 	
-	@Test
+	/*@Test
 	public void testAlumnus(){
 			
 		List<Alumnus> alumniList = Alumnus.getAlumni("San Jose State University");
@@ -70,6 +43,6 @@ public class ApplicationTest {
 			assertThat(sal.schoolName).isEqualToIgnoringCase("San Jose State University");
 			assertThat(sal.aveSalary).isNull();
 		}
-	}
+	}*/
 
 }

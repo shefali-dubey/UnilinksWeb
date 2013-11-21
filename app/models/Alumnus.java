@@ -5,8 +5,11 @@ import java.util.List;
 
 import play.db.ebean.Model.Finder;
 
+import play.Logger;
+
 import com.google.code.morphia.annotations.Entity;
 import com.google.code.morphia.annotations.Property;
+import com.google.code.morphia.query.Query;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
@@ -68,13 +71,21 @@ public class Alumnus {
 	 * @return
 	 */
 	public static List<String> getAllSchools() {
+		if (MorphiaObject.cleanup) {
+			MorphiaObject.cleanupDb();
+			MorphiaObject.cleanup = false;
+		}
 		List<String> aluminiSet = new ArrayList<>();
-		List<Alumnus> alumni = MorphiaObject.datastore.find(Alumnus.class)
-				.asList();
-		for (Alumnus a : alumni) {
-			if (!aluminiSet.contains(a.schoolName)) {
-				aluminiSet.add(a.schoolName);
+		try {
+			List<Alumnus> alumni = MorphiaObject.datastore.find(Alumnus.class)
+					.asList();
+			for (Alumnus a : alumni) {
+				if (!aluminiSet.contains(a.schoolName)) {
+					aluminiSet.add(a.schoolName);
+				}
 			}
+		} catch (Throwable e) {
+			Logger.debug("Exception mssage : " + e.getMessage());
 		}
 		return aluminiSet;
 	}
@@ -87,79 +98,80 @@ public class Alumnus {
 	 * @return
 	 */
 	public static List<Alumnus> getAlumni(String schoolName) {
+		List<Alumnus> alumniList = new ArrayList<Alumnus>();
+		try {
+			if (MorphiaObject.datastore != null) {
+				BasicDBObject getObject = new BasicDBObject();
+				getObject.put("SchoolName", schoolName);
+				DBCursor cursor = MorphiaObject.datastore.getCollection(
+						Alumnus.class).find(getObject);
+				while (cursor.hasNext()) {
+					Alumnus a = new Alumnus();
 
-		if (MorphiaObject.datastore != null) {
+					DBObject dbObject = cursor.next();
 
-			List<Alumnus> alumniList = new ArrayList<Alumnus>();
-			BasicDBObject getObject = new BasicDBObject();
-			getObject.put("SchoolName", schoolName);
-			DBCursor cursor = MorphiaObject.datastore.getCollection(
-					Alumnus.class).find(getObject);
-			while (cursor.hasNext()) {
-				Alumnus a = new Alumnus();
+					Object obj = dbObject.get("firstName");
+					a.firstName = "";
+					if (obj != null) {
+						a.firstName = obj.toString();
+					}
 
-				DBObject dbObject = cursor.next();
+					obj = dbObject.get("lastName");
+					a.lastName = "";
+					if (obj != null) {
+						a.lastName = obj.toString();
+					}
 
-				Object obj = dbObject.get("firstName");
-				a.firstName = "";
-				if (obj != null) {
-					a.firstName = obj.toString();
-				}
+					a.headline = "";
 
-				obj = dbObject.get("lastName");
-				a.lastName = "";
-				if (obj != null) {
-					a.lastName = obj.toString();
-				}
+					String headline = null;
+					obj = dbObject.get("headline");
+					if (obj != null) {
+						headline = obj.toString();
+					}
 
-				a.headline = "";
+					if (!"".equals(headline)) {
+						int last = 0;
 
-				String headline = null;
-				obj = dbObject.get("headline");
-				if (obj != null) {
-					headline = obj.toString();
-				}
-
-				if (!"".equals(headline)) {
-					int last = 0;
-
-					int first = headline.indexOf(" at");
-					if (first <= 0) {
-						first = headline.indexOf(",");
+						int first = headline.indexOf(" at");
 						if (first <= 0) {
-							first = -1;
+							first = headline.indexOf(",");
+							if (first <= 0) {
+								first = -1;
+							} else {
+								last = first + 1;
+							}
 						} else {
-							last = first + 1;
-						}
-					} else {
-						last = first + 3;
-					}
-
-					if (first == -1) {
-						a.position = headline;
-						a.organization = "";
-					} else {
-						a.position = headline.substring(0, first);
-						if (a.position == null) {
-							a.position = "";
+							last = first + 3;
 						}
 
-						a.organization = headline.substring(last);
-						if (a.organization == null) {
+						if (first == -1) {
+							a.position = headline;
 							a.organization = "";
+						} else {
+							a.position = headline.substring(0, first);
+							if (a.position == null) {
+								a.position = "";
+							}
+
+							a.organization = headline.substring(last);
+							if (a.organization == null) {
+								a.organization = "";
+							}
 						}
+
 					}
 
+					a.schoolName = schoolName;
+					alumniList.add(a);
 				}
 
-				a.schoolName = schoolName;
-				alumniList.add(a);
+				return alumniList;
 			}
-
-			return alumniList;
-		} else {
-			return new ArrayList<Alumnus>();
+		} catch (Throwable ex) {
+			Logger.error(ex.getMessage());
 		}
+		return alumniList;
 	}
 
 }
