@@ -4,6 +4,8 @@ import java.net.UnknownHostException;
 import java.util.List;
 
 import models.Alumnus;
+import models.Organization;
+import models.Salary;
 import play.Logger;
 
 import com.google.code.morphia.Datastore;
@@ -34,7 +36,7 @@ public class MorphiaObject {
 		MorphiaObject.datastore.ensureIndexes();
 		MorphiaObject.datastore.ensureCaps();
 
-		// cleanupDb();
+		 //cleanupDb();
 
 		Logger.debug("** Morphia datastore: " + MorphiaObject.datastore.getDB());
 	}
@@ -50,6 +52,20 @@ public class MorphiaObject {
 			delete.put("firstName", a.firstName);
 			delete.put("lastName", a.lastName);
 			MorphiaObject.datastore.getCollection(Alumnus.class).remove(delete);
+		}
+		
+		List<Organization> org = MorphiaObject.datastore.find(Organization.class).asList();
+		for (Organization a : org) {
+			BasicDBObject delete = new BasicDBObject();
+			delete.put("CompanyName", a.orgName);
+			MorphiaObject.datastore.getCollection(Organization.class).remove(delete);
+		}
+		
+		List<Salary> sal = MorphiaObject.datastore.find(Salary.class).asList();
+		for (Salary a : sal) {
+			BasicDBObject delete = new BasicDBObject();
+			delete.put("SchoolName", a.schoolName);
+			MorphiaObject.datastore.getCollection(Salary.class).remove(delete);
 		}
 	}
 	

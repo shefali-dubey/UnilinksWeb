@@ -5,6 +5,7 @@ import java.util.List;
 
 import play.db.ebean.Model.Finder;
 
+import com.google.code.morphia.annotations.Entity;
 import com.google.code.morphia.annotations.Property;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
@@ -13,6 +14,7 @@ import com.mongodb.DBObject;
 
 import controllers.MorphiaObject;
 
+@Entity("company")
 public class Organization {
 	
 	@Property("SchoolName")
@@ -25,7 +27,7 @@ public class Organization {
 	public float percent = 0;
 	
 	// a find helper to initiate queries.
-	public static Finder<Long, Alumnus> find = new Finder<>(Long.class, Alumnus.class);
+	public static Finder<Long, Organization> find = new Finder<>(Long.class, Organization.class);
 	
 	/**
 	 * Constructor
@@ -34,79 +36,43 @@ public class Organization {
 		// TODO Auto-generated constructor stub
 	}
 	
+	/**
+	 * This method gets organizations for which students of specified university are working.
+	 * @param schoolName
+	 * @return
+	 */
 	public static List<Organization> getOrganizationDetails(String schoolName){
 		
 		if (MorphiaObject.datastore != null){
 			
-			List<Organization> alumniList = new ArrayList<Organization>();
+			List<Organization> orgList = new ArrayList<Organization>();
 			BasicDBObject getObject = new BasicDBObject();
 			getObject.put("SchoolName", schoolName);
 			DBCursor cursor = MorphiaObject.datastore.getCollection(Organization.class).find(getObject);
+			
+			// Iterate to get records
 			while(cursor.hasNext()){
-				Alumnus a = new Alumnus();
+				Organization org = new Organization();
 				
 				DBObject dbObject = cursor.next();
 				
-				Object obj = dbObject.get("firstName");
-				a.firstName = "";
+				// Populate Organization objects with data obtained
+				Object obj = dbObject.get("CompanyName");
+				org.orgName = "";
 				if(obj != null){
-					a.firstName = obj.toString();
+					org.orgName = obj.toString();
 				}
 				
-				obj = dbObject.get("lastName");
-				a.lastName = "";
+				obj = dbObject.get("Percentage");
+				org.percent = 0;
 				if(obj != null){
-					a.lastName = obj.toString();
-				}				
-				
-				a.headline = "";
-				
-				String headline = null;
-				obj = dbObject.get("headline");				
-				if(obj != null){
-					headline = obj.toString();
+					org.percent = Float.parseFloat(obj.toString());
 				}
 				
-				if(!"".equals(headline))
-				{
-					int last = 0;
-					
-					int first = headline.indexOf(" at");
-					if(first <= 0){
-						first = headline.indexOf(",");
-						if(first <= 0){
-							first = -1;
-						}else{
-							last = first + 1;
-						}
-					}
-					else{
-						last = first + 3;
-					}
-					
-					if(first == -1){
-						a.position = headline;
-						a.organization = "";
-					}
-					else{
-						a.position = headline.substring(0, first);
-						if(a.position == null){
-							a.position = "";
-						}
-						
-						a.organization = headline.substring(last);
-						if(a.organization == null){
-							a.organization = "";
-						}
-					}
-					
-				}
-				
-				a.schoolName = schoolName;
-				//alumniList.add(a);
+				orgList.add(org);				
 			}
 			
-			return alumniList;
+			return orgList;
 		} 
 		else 
 		{
