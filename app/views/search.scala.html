@@ -1,11 +1,23 @@
-@(searchForm: Form[Search], university: String, alumni: List[Alumnus], org: List[Organization], salary: List[Salary])
+@(searchForm: Form[Search], university: String, alumni: List[Alumnus], org: List[Organization], salary: List[Salary], unilist: List[String])
 
 @import helper._
 
 @scripts = {
     <script type="text/javascript">
 $(function () {
-   
+   	var availableTags = [
+			 @for(u <- unilist) {
+	          	@if( u != unilist.last){
+             		"@u",
+       	          }else{
+	           		"@u"
+	           	}
+          	}
+		];
+		$( "#universityName" ).autocomplete({
+			source: availableTags
+		});
+		@if(!alumni.isEmpty) {
     $('#container').highcharts({
         chart: {
             plotBackgroundColor: null,
@@ -74,8 +86,7 @@ $('#container2').highcharts({
             },
             tooltip: {
                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.1f} USD</b></td></tr>',
+                pointFormat: '<tr><td style="padding:0;font-size:10px;"><b>{point.y:.1f} USD</b></td></tr>',
                 footerFormat: '</table>',
                 shared: true,
                 useHTML: true
@@ -98,8 +109,11 @@ $('#container2').highcharts({
                 ]
             }]
         });    
+
+
     
     $("#tabs").tabs();
+    }
 });
 
 </script>    
@@ -107,7 +121,7 @@ $('#container2').highcharts({
 
 @main("UniLinks",searchForm,  scripts) {
 @if(!alumni.isEmpty) {
- <h1>@university Alumni</h1>
+ <h1 align="center">@university Alumni</h1>
    <div id="tabs">
 	<ul>
 		<li><a href="#tabs-1">Job Statistics</a></li>

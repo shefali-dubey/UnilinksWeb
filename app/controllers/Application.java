@@ -2,8 +2,12 @@ package controllers;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+
+import com.mongodb.BasicDBObject;
 
 import models.Alumnus;
 import models.Organization;
@@ -26,7 +30,7 @@ public class Application extends Controller {
 	public static Result home() {
 		return ok(views.html.search.render(searchForm, "",
 				new ArrayList<Alumnus>(), new ArrayList<Organization>(),
-				new ArrayList<Salary>()));
+				new ArrayList<Salary>(), Alumnus.getAllSchools()));
 	}
 
 	/**
@@ -45,7 +49,8 @@ public class Application extends Controller {
 		if (filledForm.hasErrors()) {
 			return badRequest(views.html.search.render(searchForm,
 					universityName, new ArrayList<Alumnus>(),
-					new ArrayList<Organization>(), new ArrayList<Salary>()));
+					new ArrayList<Organization>(), new ArrayList<Salary>(),
+					new ArrayList<String>()));
 		} else {
 
 			// Get the list of alumni of specified university from MongoDB
@@ -63,7 +68,7 @@ public class Application extends Controller {
 			// return ok(views.html.table.render(universityName, alumniList,
 			// orgList, salaryList));
 			return ok(views.html.search.render(searchForm, universityName,
-					alumniList, orgList, salaryList));
+					alumniList, orgList, salaryList, Alumnus.getAllSchools()));
 		}
 	}
 }
