@@ -1,0 +1,13 @@
+db.company.insert({"SchoolName" : "MIT","CompanyName" : "Google", "Percentage" : "12"})
+db.company.insert({"SchoolName" : "MIT","CompanyName" : "Apple", "Percentage" : "5"})
+db.company.insert({"SchoolName" : "MIT","CompanyName" : "Amazon", "Percentage" : "9"})
+db.company.insert({"SchoolName" : "MIT","CompanyName" : "Morgan Stanley", "Percentage" : "7"})
+db.company.insert({"SchoolName" : "MIT","CompanyName" : "Others", "Percentage" : "67"})
+
+
+db.salary.insert({"SchoolName" : "MIT","Branch" : "Civil Engineering","AverageSal" : "68583"})
+db.salary.insert({""SchoolName" : "MIT",Branch" : "Computer Hardware ","AverageSal" : "92700"})
+db.salary.insert({"SchoolName" : "MIT","Branch" : "Mechanical Engineering","AverageSal" : "86560"})
+db.salary.insert({"SchoolName" : "MIT","Branch" : "Computer Software","AverageSal" : "93400"})
+
+ 

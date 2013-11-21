@@ -1,0 +1,14 @@
+db.company.insert({"SchoolName" : "University of Michigan","CompanyName" : "Microsoft", "Percentage" : "1"}) 
+db.company.insert({"SchoolName" : "University of Michigan","CompanyName" : "Apple", "Percentage" : "2"})
+db.company.insert({"SchoolName" : "University of Michigan","CompanyName" : "Google", "Percentage" : "2"})
+db.company.insert({"SchoolName" : "University of Michigan","CompanyName" : "LinkedIn", "Percentage" : "1"})
+db.company.insert({"SchoolName" : "University of Michigan","CompanyName" : "Others", "Percentage" : "94"})
+
+db.salary.insert({"SchoolName" : "University of Michigan","Branch" : "Civil Engineering", "AverageSal" : "47840"})
+db.salary.insert({"SchoolName" : "University of Michigan","Branch" : "Computer Engineering ","AverageSal" : "70000"})
+db.salary.insert({"SchoolName" : "University of Michigan","Branch" : "Electrical Engineering", "AverageSal" : "70302.31"})
+db.salary.insert({"SchoolName" : "University of Michigan","Branch" : "Mechanical Engineering",  "AverageSal" : "66350.07"})
+db.salary.insert({"SchoolName" : "University of Michigan","Branch" : "Computer Science", "AverageSal" : "67644.44"})
+
+
+ 

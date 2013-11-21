@@ -1,0 +1,95 @@
+db.students.insert({"SchoolName" : "University of Michigan", "lastName" : "Jain", "firstName" : "Prachi","headline":"Sr. Design Engineer at Stryker","url":"www.linkedin.com/pub/prachi-jain/19/a67/591/"})
+db.students.insert({"SchoolName" : "University of Michigan", "lastName" : "Calderon", "firstName" : "Luis","headline":"Senior Manager Buyer Experience Analytics at eBay Inc","url":"www.linkedin.com/in/luiscalderonmba/"})
+db.students.insert({"SchoolName" : "University of Michigan", "lastName" : "Khurana", "firstName" : "Sanjay","headline":"Senior Principal at Infosys Consulting","url":"www.linkedin.com/pub/sanjay-khurana/0/161/93b/"})
+db.students.insert({"SchoolName" : "University of Michigan", "lastName" : "Madabhushi, CCP", "firstName" : "Maitreyi","headline":"Recruitment Consultant at Google
+","url":"www.linkedin.com/in/maitreyimadabhushi/"})
+db.students.insert({"SchoolName" : "University of Michigan", "lastName" : "Sharma", "firstName" : "Nitya","headline":"Co-Founder & Managing Partner at R-Square Advisors LLP","url":"www.linkedin.com/pub/nitya-sharma/0/a73/bb9/"})
+db.students.insert({"SchoolName" : "University of Michigan", "lastName" : "Marathe", "firstName" : "Amit","headline":"Firmware Engineering Manager at Hewlett-Packard
+","url":"www.linkedin.com/in/amitmarathe1/"})
+db.students.insert({"SchoolName" : "University of Michigan", "lastName" : "Aheimer", "firstName" : "Kelly","headline":"Strategic thinker passionate about delivering innovative solutions to unstructured business problems.","url":"www.linkedin.com/in/kaheimer/"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "DeNyse", "firstName" : "Gavin","headline":"Business Analytics & Supply Chain Strategy Executive","url":"www.linkedin.com/in/gavind/"})
+db.students.insert({"SchoolName" : "University of Michigan", "lastName" : "Yossef", "firstName" : "Rotem","headline":"Senior Strategist at ACTIVE Network.","url":"www.linkedin.com/in/rotemy/"})
+
+
+
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Furtado", "firstName" : "Sabita","headline":"Product Sourcing Manager
+","url":"www.linkedin.com/pub/sabita-furtado/4/32a/49a/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Madhav", "firstName" : "Neel","headline":"Director Engineering at Google
+","url":"www.linkedin.com/pub/neel-madhav/0/301/aa1/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Gundecha", "firstName" : "Mohit","headline":"Co-Founder & CEO at Jombay.com
+","url":"in.linkedin.com/in/mohitgundecha/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Raymond", "firstName" : "Eric","headline":"Technical Leader - Creative Mind - Serial Entrepreneur - Software Executive","url":"www.linkedin.com/in/ericraymond/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Padala", "firstName" : "Ramesh","headline":"VP Product & Partner Engineering at Saavn","url":"www.linkedin.com/in/rpadala/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Lenz", "firstName" : "Mike","headline":"Co-Founder, ShopStyle","url":"www.linkedin.com/in/mlenz/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Chin", "firstName" : "Ken","headline":"Experienced Software Engineer and Entrepeneur
+","url":"www.linkedin.com/in/kenchin/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Roth", "firstName" : "Issac","headline":"CEO, StrongLoop","url":"www.linkedin.com/in/issacroth/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Burr", "firstName" : "Scott","headline":"Principal Innovation Consultant","url":"www.linkedin.com/pub/scott-burr/0/35/20b/"})
+db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Comly", "firstName" : "Andy","headline":"CEO Executive Advisor at Management Consulting","url":"www.linkedin.com/in/comly/"})
+
+
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Feldman", "firstName" : "Michael","headline":"Head of Business Development, Advertising Products
+","url":"www.linkedin.com/in/feldmanmichael/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Carver", "firstName" : "Jason","headline":"Director of Engineering at AVGe
+","url":"www.linkedin.com/pub/jason-carver/0/22/204/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Alcabes", "firstName" : "Harvey","headline":"Technical Recruiter at Houzz -- Connecting Top Software Engineers with a Hot Web Startup","url":"www.linkedin.com/in/harveyalcabes/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Grewal", "firstName" : "Gowri","headline":"Technology product and operations executive","url":"www.linkedin.com/in/gowri2/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Heaney", "firstName" : "Michael B","headline":"Senior Scientist/Engineer: Electronic Materials & Device Physics","url":"www.linkedin.com/in/michaelbheaney/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Vladimirov", "firstName" : "Alexander","headline":"Staff Software Engineer with Niantic Labs@Google","url":"www.linkedin.com/in/sasha/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Pai", "firstName" : "Ramesh","headline":"Product, UX & Engineering Leader","url":"www.linkedin.com/in/rameshpai/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Cruden", "firstName" : "Karen","headline":"Sr Program Manager at Tesla Motors","url":"www.linkedin.com/pub/karen-cruden/0/281/331/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "DeNyse", "firstName" : "Gavin","headline":"Business Analytics & Supply Chain Strategy Executive
+","url":"www.linkedin.com/in/gavind/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Pignot", "firstName" : "Eric","headline":"Co-founder at Enko Education","url":"za.linkedin.com/in/epignot/"})
+
+
+
+
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Nahar", "firstName" : "Rohit","headline":"Software Engineer/Product Manager at Expedia","url":"www.linkedin.com/in/rohitnahar"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Ghose", "firstName" : "Arijit","headline":"Senior Advisor - CDN Performance at Level 3 Communications","url":"www.linkedin.com/in/rijghosh"})
+db.students.insert({"SchoolName" : "University of California Irvine", "lastName" : "Purushothama", "firstName" : "Chandan","headline":"Software Test Engineer at Citrix","url":"www.linkedin.com/pub/chandan-purushothama/12/499/35a"})
+db.students.insert({"SchoolName" : "University of California Irvine", "lastName" : "Madhani", "firstName" : "Bhavin","headline":"Software Engineer at Healthline Networks, Inc.","url":"www.linkedin.com/pub/bhavin-madhani/16/4a/570"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Mishra", "firstName" : "Deepak","headline":"Senior Engineer at QLogic","url":"www.linkedin.com/pub/deepak-k-mishra/b/84/66b"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Gulati", "firstName" : "Vrishti","headline":"Big Data Engineer at InsightsOne","url":"www.linkedin.com/pub/vrishti-gulati/49/278/a71"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Dewan", "firstName" : "Sushant","headline":"Software Professional at VMWare","url":"www.linkedin.com/pub/sushant-dewan/13/335/134"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Lokare", "firstName" : "Ameya","headline":"Senior Software Engineer at Twilio, Inc.","url":"www.linkedin.com/in/ameyalokare"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Gupta", "firstName" : "Ankit","headline":"Software Engineer at NVIDIA","url":"www.linkedin.com/pub/ankit-gupta/5/b8/a03"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Vyas", "firstName" : "Noopur","headline":"Software Dev Engineer at Expedia","url":"www.linkedin.com/pub/noopur-vyas/13/887/6a6"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Jayadevaprakash", "firstName" : "Nityananda","headline":"Visual Search Engineer at A9.com","url":"www.linkedin.com/pub/nityananda-jayadevaprakash/3/290/a"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Sambasivan", "firstName" : "Nithya","headline":"User Experience Researcher at Google.org","url":"www.linkedin.com/pub/nithya-sambasivan/40/3b7/59b"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Shivaram", "firstName" : "Kiran","headline":"Data Scientist/Software Engineer, Dhingana Inc","url":"www.linkedin.com/in/kiranshivaram"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Bhattacharjee", "firstName" : "Debjit","headline":"Software Engineer at Egnyte","url":"www.linkedin.com/in/debjitbhattacharjee"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Kodre", "firstName" : "Ravidutta","headline":"Data Scientist at PayPal","url":"www.linkedin.com/in/ravikodre"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "ShyamSundar", "firstName" : "Harini","headline":"Senior Engineer at BioSPEQ Inc.","url":"www.linkedin.com/pub/harini-shyam-sundar/9/663/617"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Bodicherla", "firstName" : "Vikram","headline":"Technical Yahoo!","url":"sg.linkedin.com/in/vikrambodicherla"})
+db.students.insert({"SchoolName" : "University of California, Irvine", "lastName" : "Sankara", "firstName" : "Aishwarya","headline":"Engineer at Qualcomm","url":"in.linkedin.com/pub/aishwarya-bharathi-sankara/9/946/294"})
+
+
+
+
+
+
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Moradkhan", "firstName" : "Romlin","headline":"Project Manager at Cisco Systems
+","url":"www.linkedin.com/in/romlinmoradkhan/"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Shah", "firstName" : "Swapnil","headline":"Demand Planner Analyst at NVIDIA
+","url":"www.linkedin.com/in/swapnil1/"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Spandan Nai", "firstName" : "Spandan Nai","headline":"Quality Engineer at NetApp","url":"www.linkedin.com/pub/spandan-nai/17/919/907/"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Leong", "firstName" : "Craig","headline":"Product Design at Apple","url":"www.linkedin.com/pub/craig-leong/7/29b/bb6"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Karthik Ganesan", "firstName" : "Karthik Ganesan","headline":"Technical Leader at Cisco Systems","url":"www.linkedin.com/pub/karthik-ganesan/4/bbb/25a/"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Swapnil Deshpande", "firstName" : "Swapnil Deshpande","headline":"Intern TAC at A10 Networks","url":"www.linkedin.com/pub/swapnil-deshpande/15/2a2/6a6/"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Shetty", "firstName" : "Anupama","headline":"Software Development Engineer in Test at Ooyala,"url":"www.linkedin.com/pub/anupama-shetty/11/a62/702"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Segura", "firstName" : "Terran","headline":"Lead Financial Staff Analyst at Lockheed Martin","url":"www.linkedin.com/pub/terran-segura/36/328/431"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Singh", "firstName" : "Shivanshu","headline":"Left/Right Brainer, Engineering Software","url":"www.linkedin.com/in/shivanshu"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Vikani", "firstName" : "Sagar","headline":"Software Engineer - II at eBay Inc","url":"www.linkedin.com/in/sagarvikani"
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Gudiseva", "firstName" : "Madhuri","headline":"Business Analyst at Cisco Systems”,”url":"www.linkedin.com/pub/anupama-shetty/11/a62/702"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Kulandaiver", "firstName" : "Manoj","headline":"Software Engineer at Cisco Systems”,"url":"www.linkedin.com/pub/manoj-kulandaivel/4/b1/302"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Shivappa", "firstName" : "Chandrakala","headline":"Senior QA Automation Engineer at Cisco Systems”,"url":"www.linkedin.com/in/chandrakalas"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Grover", "firstName" : "Rohan","headline":"Senior Manager at Cisco Systems”,"url":"www.linkedin.com/in/groverrohan‎"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Melli-Huber", "firstName" : "Francisco","headline":"Performance Engineering Manager at Apple”,"url":"www.linkedin.com/pub/francisco-melli-huber/3/319/815‎"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Bhatia", "firstName" : "Abhijay","Headline":"Senior Transfer Pricing Professional at Intel Corp.”,"url":"www.linkedin.com/pub/abhijay-bhatia/2/890/b26"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Grosskopf", "firstName" : "Daniel","headline":"Sr. Verification Engineer at Intel Corp.”,"url":"il.linkedin.com/in/dgrossko"})
+db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Agarwala”, "firstName" : "Paridhi","headline":"Software Engineer at Juniper Networks”,"url":"www.linkedin.com/pub/paridhi-agarwala/14/329/6a6"})
+
+
+
+

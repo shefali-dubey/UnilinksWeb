@@ -1,0 +1,16 @@
+db.company.insert({"SchoolName" : "Stanford","CompanyName" : "Google", "Percentage" : "10"})
+db.company.insert({"SchoolName" : "Stanford","CompanyName" : "Apple", "Percentage" : "5"})
+db.company.insert({"SchoolName" : "Stanford","CompanyName" : "Amazon", "Percentage" : "9"})
+db.company.insert({"SchoolName" : "Stanford","CompanyName" : "Facebook", "Percentage" : "6"})
+db.company.insert({"SchoolName" : "Stanford","CompanyName" : "Self Employed", "Percentage" : "10"})
+db.company.insert({"SchoolName" : "Stanford","CompanyName" : "Others", "Percentage" : "60"})
+
+
+db.salary.insert({"SchoolName" : "Stanford","Branch" : "Civil Engineering","AverageSal" : "64465"})
+db.salary.insert({"SchoolName" : "Stanford","Branch" : "Computer Science","AverageSal" : "105341"})
+db.salary.insert({"SchoolName" : "Stanford","Branch" : "Electrical Engineering","AverageSal" : "72800"})
+db.salary.insert({"SchoolName" : "Stanford","Branch" : "Mechanical Engineering","AverageSal" : "83075"})
+db.salary.insert({"SchoolName" : "Stanford","Branch" : "Management Science & Eng","AverageSal" : "83201"})
+
+
+ 

@@ -1,0 +1,20 @@
+db.company.insert({"SchoolName" : "University of California, Irvine","CompanyName" : "Google", "Percentage" : "6"})
+db.company.insert({"SchoolName" : "University of California, Irvine","CompanyName" : "Apple", "Percentage" : "3"})
+db.company.insert({"SchoolName" : "University of California, Irvine","CompanyName" : "Cisco", "Percentage" : "10"})
+db.company.insert({"SchoolName" : "University of California, Irvine","CompanyName" : "Self Employed", "Percentage" : "1"})
+db.company.insert({"SchoolName" : "University of California, Irvine","CompanyName" : "Others", "Percentage" : "80"})
+
+
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "Chemical and Materials Engineering","AverageSal" : "63,571"}) 
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "Civil Engineering","AverageSal" : "63,500"})
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "Computer Engineering","AverageSal" : "88,196"})
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "Electrical Engineering","AverageSal" : "88,141"})
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "Industrial & Systems Engineering","AverageSal" : "64,500"})
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "MBA/MSE","AverageSal" : "88,933"})
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "Mechanical and Aerospace Engineering ","AverageSal" : "69,187"})
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "MSE","AverageSal" : "86,857"})
+db.salary.insert({"SchoolName" : "University of California, Irvine","Branch" : "Software Engineering ","AverageSal" : "89,121"})
+
+
+
+ 

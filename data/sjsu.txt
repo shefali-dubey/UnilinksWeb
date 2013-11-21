@@ -1,0 +1,20 @@
+db.company.insert({"SchoolName" : "San Jose state university","CompanyName" : "Google", "Percentage" : "6"})
+db.company.insert({"SchoolName" : "San Jose state university","CompanyName" : "Apple", "Percentage" : "3"})
+db.company.insert({"SchoolName" : "San Jose state university","CompanyName" : "Cisco", "Percentage" : "10"})
+db.company.insert({"SchoolName" : "San Jose state university","CompanyName" : "Self Employed", "Percentage" : "1"})
+db.company.insert({"SchoolName" : "San Jose state university","CompanyName" : "Others", "Percentage" : "80"})
+
+
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Chemical and Materials Engineering","AverageSal" : "63571"}) 
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Civil Engineering","AverageSal" : "63500"})
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Computer Engineering","AverageSal" : "88196"})
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Electrical Engineering","AverageSal" : "88141"})
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Industrial & Systems Engineering","AverageSal" : "64500"})
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "MBA/MSE","AverageSal" : "88933"})
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Mechanical and Aerospace Engineering ","AverageSal" : "69187"})
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "MSE","AverageSal" : "86857"})
+db.salary.insert({"SchoolName" : "San Jose state university","Branch" : "Software Engineering ","AverageSal" : "89121"})
+
+
+
+ 
