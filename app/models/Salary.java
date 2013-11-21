@@ -5,6 +5,7 @@ import java.util.List;
 
 import play.db.ebean.Model.Finder;
 
+import com.google.code.morphia.annotations.Entity;
 import com.google.code.morphia.annotations.Property;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
@@ -17,6 +18,7 @@ import controllers.MorphiaObject;
  * @author shefali
  *
  */
+@Entity("salary")
 public class Salary {
 	
 	@Property("SchoolName")

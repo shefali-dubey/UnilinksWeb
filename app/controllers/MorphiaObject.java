@@ -42,7 +42,7 @@ public class MorphiaObject {
 		
 		MorphiaObject.datastore.ensureCaps();
 
-		 //cleanupDb();
+//		 cleanupDb();
 
 		Logger.debug("** Morphia datastore: " + MorphiaObject.datastore.getDB());
 	}
