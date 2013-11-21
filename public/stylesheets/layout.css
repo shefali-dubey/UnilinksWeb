@@ -69,7 +69,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 #header{
 	text-align:center;
-	text-transform:uppercase;
+	
 	}
 
 #header h1, #header p{
@@ -80,7 +80,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	}
 
 #header h1 a{
-	font-size:140px;
+	font-size:110px;
 	color:#292929;
 	background-color:#E0E0E0;
 	}

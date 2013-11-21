@@ -28,10 +28,8 @@ db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Burr", "
 db.students.insert({"SchoolName" : "Stanford University", "lastName" : "Comly", "firstName" : "Andy","headline":"CEO Executive Advisor at Management Consulting","url":"www.linkedin.com/in/comly/"})
 
 
-db.students.insert({"SchoolName" : "MIT", "lastName" : "Feldman", "firstName" : "Michael","headline":"Head of Business Development, Advertising Products
-","url":"www.linkedin.com/in/feldmanmichael/"})
-db.students.insert({"SchoolName" : "MIT", "lastName" : "Carver", "firstName" : "Jason","headline":"Director of Engineering at AVGe
-","url":"www.linkedin.com/pub/jason-carver/0/22/204/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Feldman", "firstName" : "Michael","headline":"Head of Business Development, Advertising Products","url":"www.linkedin.com/in/feldmanmichael/"})
+db.students.insert({"SchoolName" : "MIT", "lastName" : "Carver", "firstName" : "Jason","headline":"Director of Engineering at AVGe","url":"www.linkedin.com/pub/jason-carver/0/22/204/"})
 db.students.insert({"SchoolName" : "MIT", "lastName" : "Alcabes", "firstName" : "Harvey","headline":"Technical Recruiter at Houzz -- Connecting Top Software Engineers with a Hot Web Startup","url":"www.linkedin.com/in/harveyalcabes/"})
 db.students.insert({"SchoolName" : "MIT", "lastName" : "Grewal", "firstName" : "Gowri","headline":"Technology product and operations executive","url":"www.linkedin.com/in/gowri2/"})
 db.students.insert({"SchoolName" : "MIT", "lastName" : "Heaney", "firstName" : "Michael B","headline":"Senior Scientist/Engineer: Electronic Materials & Device Physics","url":"www.linkedin.com/in/michaelbheaney/"})
