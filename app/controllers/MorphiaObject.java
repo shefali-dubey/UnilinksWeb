@@ -33,7 +33,13 @@ public class MorphiaObject {
 		MorphiaObject.morphia = new Morphia();
 		MorphiaObject.datastore = MorphiaObject.morphia.createDatastore(
 				MorphiaObject.mongo, dbname);
+		
+		// Ensure Index
 		MorphiaObject.datastore.ensureIndexes();
+		MorphiaObject.datastore.getCollection(Alumnus.class).ensureIndex("SchoolName");
+		MorphiaObject.datastore.getCollection(Organization.class).ensureIndex("SchoolName");
+		MorphiaObject.datastore.getCollection(Salary.class).ensureIndex("SchoolName");
+		
 		MorphiaObject.datastore.ensureCaps();
 
 		 //cleanupDb();

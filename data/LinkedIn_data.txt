@@ -77,18 +77,19 @@ db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Sp
 db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Leong", "firstName" : "Craig","headline":"Product Design at Apple","url":"www.linkedin.com/pub/craig-leong/7/29b/bb6"})
 db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Karthik Ganesan", "firstName" : "Karthik Ganesan","headline":"Technical Leader at Cisco Systems","url":"www.linkedin.com/pub/karthik-ganesan/4/bbb/25a/"})
 db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Swapnil Deshpande", "firstName" : "Swapnil Deshpande","headline":"Intern TAC at A10 Networks","url":"www.linkedin.com/pub/swapnil-deshpande/15/2a2/6a6/"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Shetty", "firstName" : "Anupama","headline":"Software Development Engineer in Test at Ooyala,"url":"www.linkedin.com/pub/anupama-shetty/11/a62/702"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Segura", "firstName" : "Terran","headline":"Lead Financial Staff Analyst at Lockheed Martin","url":"www.linkedin.com/pub/terran-segura/36/328/431"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Singh", "firstName" : "Shivanshu","headline":"Left/Right Brainer, Engineering Software","url":"www.linkedin.com/in/shivanshu"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Vikani", "firstName" : "Sagar","headline":"Software Engineer - II at eBay Inc","url":"www.linkedin.com/in/sagarvikani"
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Gudiseva", "firstName" : "Madhuri","headline":"Business Analyst at Cisco Systems”,”url":"www.linkedin.com/pub/anupama-shetty/11/a62/702"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Kulandaiver", "firstName" : "Manoj","headline":"Software Engineer at Cisco Systems”,"url":"www.linkedin.com/pub/manoj-kulandaivel/4/b1/302"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Shivappa", "firstName" : "Chandrakala","headline":"Senior QA Automation Engineer at Cisco Systems”,"url":"www.linkedin.com/in/chandrakalas"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Grover", "firstName" : "Rohan","headline":"Senior Manager at Cisco Systems”,"url":"www.linkedin.com/in/groverrohan‎"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Melli-Huber", "firstName" : "Francisco","headline":"Performance Engineering Manager at Apple”,"url":"www.linkedin.com/pub/francisco-melli-huber/3/319/815‎"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Bhatia", "firstName" : "Abhijay","Headline":"Senior Transfer Pricing Professional at Intel Corp.”,"url":"www.linkedin.com/pub/abhijay-bhatia/2/890/b26"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Grosskopf", "firstName" : "Daniel","headline":"Sr. Verification Engineer at Intel Corp.”,"url":"il.linkedin.com/in/dgrossko"})
-db.university.insert({"SchoolName" : "San Jose State University", "lastName" : "Agarwala”, "firstName" : "Paridhi","headline":"Software Engineer at Juniper Networks”,"url":"www.linkedin.com/pub/paridhi-agarwala/14/329/6a6"})
+
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Shetty", "firstName" : "Anupama","headline":"Software Development Engineer in Test at Ooyala,"url":"www.linkedin.com/pub/anupama-shetty/11/a62/702"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Segura", "firstName" : "Terran","headline":"Lead Financial Staff Analyst at Lockheed Martin","url":"www.linkedin.com/pub/terran-segura/36/328/431"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Singh", "firstName" : "Shivanshu","headline":"Left/Right Brainer, Engineering Software","url":"www.linkedin.com/in/shivanshu"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Vikani", "firstName" : "Sagar","headline":"Software Engineer - II at eBay Inc","url":"www.linkedin.com/in/sagarvikani"
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Gudiseva", "firstName" : "Madhuri","headline":"Business Analyst at Cisco Systems”,”url":"www.linkedin.com/pub/anupama-shetty/11/a62/702"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Kulandaiver", "firstName" : "Manoj","headline":"Software Engineer at Cisco Systems”,"url":"www.linkedin.com/pub/manoj-kulandaivel/4/b1/302"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Shivappa", "firstName" : "Chandrakala","headline":"Senior QA Automation Engineer at Cisco Systems”,"url":"www.linkedin.com/in/chandrakalas"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Grover", "firstName" : "Rohan","headline":"Senior Manager at Cisco Systems”,"url":"www.linkedin.com/in/groverrohan‎"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Melli-Huber", "firstName" : "Francisco","headline":"Performance Engineering Manager at Apple”,"url":"www.linkedin.com/pub/francisco-melli-huber/3/319/815‎"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Bhatia", "firstName" : "Abhijay","Headline":"Senior Transfer Pricing Professional at Intel Corp.”,"url":"www.linkedin.com/pub/abhijay-bhatia/2/890/b26"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Grosskopf", "firstName" : "Daniel","headline":"Sr. Verification Engineer at Intel Corp.”,"url":"il.linkedin.com/in/dgrossko"})
+db.students.insert({"SchoolName" : "San Jose State University", "lastName" : "Agarwala”, "firstName" : "Paridhi","headline":"Software Engineer at Juniper Networks”,"url":"www.linkedin.com/pub/paridhi-agarwala/14/329/6a6"})
 
 
 
